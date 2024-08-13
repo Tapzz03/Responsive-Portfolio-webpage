@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">[YourName]<span>Portfolio</span></a>
+    
+        <i class='bx bx-menu' id="menu-icon"></i>
+    
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>[YourName]</span></h1>
+            <h3 class="text-animation">I'm a <span>[Your Profession]</span></h3>
+            <p> [Brief description about yourself or your work. Customize this text.]</p>
+    
+            <div class="social-icons">
+                <a href="[LinkedIn URL]"><i class='bx bxl-linkedin'></i></a> 
+                <a href="[GitHub URL]"><i class='bx bxl-github'></i></a> 
+                <a href="[Facebook URL]"><i class='bx bxl-facebook'></i></a> 
+                <a href="[Instagram URL]"><i class='bx bxl-instagram'></i></a> 
+            </div>
+    
+            <div class="btn-group">
+                <a href="[Your Resume/CV URL]" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="[path-to-your-image]" alt="Your Image">
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <h2 class="heading">About</h2>
+    
+        <div class="timeline-items">
+            <!-- Repeat this block for each timeline event -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">[Year]</div>
+                <div class="timeline-content">
+                    <h3>[Event Title]</h3>
+                    <p>[Description of the event, education, job experience, etc.]</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">[Year]</div>
+                <div class="timeline-content">
+                    <h3>[Event Title]</h3>
+                    <p>[Description of the event, education, job experience, etc.]</p>
+                </div>
+            </div>
+            <!-- End timeline block -->
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+    
+        <div class="services-container">
+            <!-- Repeat this block for each service -->
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>[Service Title]</h4>
+                    <p>[Description of the service provided. Customize this text.]</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>[Service Title]</h4>
+                    <p>[Description of the service provided. Customize this text.]</p>
+                </div>
+            </div>
+            <!-- End service block -->
+        </div>
+    </section>
+    
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Portfolio</h2>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('category1')"> [category1]</button>
+            <button class="btn" onclick="filterSelection('category2')"> [category2]</button>
+            <button class="btn" onclick="filterSelection('category3')"> [category3</button>
+        </div>
+    
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <!-- Repeat this block for each portfolio item -->
+             <!--Ensure that the category in the class below matches the one in the myBtnContainer, then the filter function will work. -->
+            <div class="column category1">
+                <div class="content-card">
+                    <div class="image-gallery">
+                        <!-- Repeat this block for each image in the gallery -->
+                        <img src="[path-to-your-image/mountains.jpg]" alt="[alt text]" style="width:100%">
+                        <!-- End image block -->
+                    </div>
+                    <h4>[Client Name]</h4>
+                    <p>[Short description of the project and technologies used.]</p>
+                    <a href="[URL to project]" class="btn">View website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Repeat this block for each portfolio item -->
+             <!--Ensure that the category in the class below matches the one in the myBtnContainer, then the filter function will work. -->
+            <div class="column category2">
+                <div class="content-card">
+                    <div class="image-gallery">
+                        <!-- Repeat this block for each image in the gallery -->
+                        <img src="[path-to-your-image/mountains.jpg]" alt="[alt text]" style="width:100%">
+                        <!-- End image block -->
+                    </div>
+                    <h4>[Client Name]</h4>
+                    <p>[Short description of the project and technologies used.]</p>
+                    <a href="[URL to project]" class="btn">View website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Repeat this block for each portfolio item -->
+             <!--Ensure that the category in the class below matches the one in the myBtnContainer, then the filter function will work. -->
+            <div class="column category3">
+                <div class="content-card">
+                    <div class="image-gallery">
+                        <!-- Repeat this block for each image in the gallery -->
+                        <img src="[path-to-your-image/mountains.jpg]" alt="[alt text]" style="width:100%">
+                        <!-- End image block -->
+                    </div>
+                    <h4>[Client Name]</h4>
+                    <p>[Short description of the project and technologies used.]</p>
+                    <a href="[URL to project]" class="btn">View website</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- End portfolio item block -->
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="[contact-form-handler]" method="post">
+            <div class="col">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+            </div>
+            
+            <div class="col">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+            </div>
+            
+            <div class="col">
+                <label for="number">Contact Number:</label>
+                <input type="tel" id="number" name="number" placeholder="Contact Number">
+            </div>
+    
+            <div class="write-message">
+                <h3>Write a Message</h3>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                </div>
+            </div>
+            
+            <button type="submit" name="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <div class="social">
+            <a href="[LinkedIn URL]"><i class='bx bxl-linkedin'></i></a> 
+            <a href="[GitHub URL]"><i class='bx bxl-github'></i></a> 
+            <a href="[Facebook URL]"><i class='bx bxl-facebook'></i></a> 
+            <a href="[Instagram URL]"><i class='bx bxl-instagram'></i></a> 
+        </div>
+    
+        <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Education</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="copyright">
+            <p>&copy; 2024 [Your Name] | All rights reserved</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <!-- Include any additional JavaScript files here -->
+    </body>
+    </html>
